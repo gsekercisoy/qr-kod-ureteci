@@ -1,0 +1,50 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, sans-serif; min-height: 100vh; }
+
+.app { max-width: 880px; margin: 26px auto; padding: 0 16px; display: flex; flex-direction: column; gap: 14px; }
+h1 { text-align: center; }
+.lead { color: #94a3b8; font-size: .88rem; text-align: center; }
+
+.layout { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; justify-content: center; }
+
+.panel { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+.panel h2 { font-size: .95rem; color: #4ade80; }
+.form-panel { flex: 1; min-width: 320px; }
+.img-panel { align-items: center; min-width: 330px; }
+
+label { font-size: .78rem; color: #94a3b8; }
+textarea {
+  width: 100%; background: #0f172a; border: 1px solid #334155; color: #e2e8f0;
+  padding: 11px 13px; border-radius: 9px; font-size: .93rem; resize: vertical;
+  font-family: ui-monospace, Consolas, monospace;
+}
+textarea:focus { outline: 2px solid #22c55e; }
+
+input[type=range] { width: 100%; accent-color: #22c55e; }
+
+.ecd { display: flex; gap: 7px; flex-wrap: wrap; }
+.ecd button {
+  background: #273449; color: #94a3b8; border: 1px solid #334155;
+  padding: 7px 13px; border-radius: 999px; font-size: .8rem; font-weight: 700; cursor: pointer;
+}
+.ecd button.active { background: #22c55e; color: #052e16; border-color: transparent; }
+
+.actions { display: flex; gap: 10px; }
+.btn { flex: 1; border-radius: 10px; padding: 11px; font-weight: 800; cursor: pointer; border: 1px solid #334155; }
+.btn.primary { background: #22c55e; color: #052e16; border-color: transparent; }
+.btn.ghost { background: #273449; color: #e2e8f0; }
+.btn:disabled { opacity: .5; cursor: wait; }
+.btn:hover:not(:disabled) { filter: brightness(1.15); }
+
+.img-panel img { background: #fff; border-radius: 10px; border: 1px solid #334155; }
+.empty { padding: 120px 0; }
+.note { font-size: .8rem; }
+.note b { color: #4ade80; }
+
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 7px 10px; border-bottom: 1px solid #334155; text-align: left; font-size: .86rem; }
+.tbl th { color: #94a3b8; font-size: .72rem; text-transform: uppercase; letter-spacing: .5px; }
+.mono { font-family: ui-monospace, Consolas, monospace; font-size: .8rem; }
+.muted { color: #64748b; }
+.err { background: #7f1d1d; color: #fecaca; padding: 10px 14px; border-radius: 10px; font-size: .85rem; }
